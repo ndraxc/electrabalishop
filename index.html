@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Drop Down Navigation Menu | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Electra</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Electra</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">HALAMAN</a></li>
+          <li>
+            <a href="#">KATEGORI</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">SENSOR/MODUL</a></li>
+              <li><a href="#">CCTV</a></li>
+              <li><a href="#">AKSESORIS</a></li>
+              <li><a href="#">KABEL</a></li>
+              <li class="more">
+                <span><a href="#">LAINNYA</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">Neumorphism</a></li>
+                  <li><a href="#">Pre-loader</a></li>
+                  <li><a href="#">Glassmorphism</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">MERK</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">HIKVISION</a></li>
+              <li><a href="#">HILOOK</a></li>
+              <li><a href="#">DAHUA</a></li>
+              <li><a href="#">IMOU</a></li>
+              <li><a href="#">RUIJIE</a></li>
+            </ul>
+          </li>
+          <li><a href="#">TENTANG</a></li>
+          <li><a href="#">KONTAK</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input class="form-control mr-sm-2" type="search" placeholder="Cari product..." id="search-bar" aria-label="Search" oninput="debouncedSearch()">
+        </div>
+      </div>
+    </div>
+  </nav>
+<br>
+<br>
+<br>
+
+
+
+
+<div class="container my-5">
+  <div class="row" id="product-list">
+    <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/c6n 2mp.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="C6N 2MP">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">C6N 2MP</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 339.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="https://wa.me/628175777488?text=Apakah%20produk%20ini%20masih%20tersedia?
+            " class="btn btn-sm btn-success">Beli</a>
+            <a href="detail.product/c6n2mp.html" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/c6n 2mp.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Image 2">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">C6N 4MP</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 485.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/H8C 2MP.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Image 3">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">H8C 2MP</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 500.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/H8C 2MP.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Image 4">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">H8C 4MP</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 500.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/b120-pc.jpg" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Image 5">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">THC-B120-PC</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 197.750</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/T120-PC.jpg" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Image 6">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">THC-T120-PC</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 186.875</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/EXLPF OUT.jpg" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Image 7">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">DS-2CE16D0T-EXLPF</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 329.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/EXLPF IN.jpg" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Image 8">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">DS-2CE76D0T-EXLPF Indoor 2MP </h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 725.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+    
+   <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card ">
+        <img src="img.product/HAC-T1A21_thumb.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Image 10">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">DH-HAC-T1A21P</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 165.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/HAC-B1A21_thumb.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="DH-HAC-T1A21P">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">DH-HAC-B1A21P</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 165.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/Imou a1.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="IMOU RANGER A1 IPC-K2E1P 2K">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">IMOU RANGER A1 IPC-K2E1P 2K</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 295.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="img.product/Imou cruiser.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="IMOU CRUISER SC IPC-K7CP 2K 3MP">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">IMOU CRUISER SC IPC-K7CP 2K 3MP</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 585.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="https://via.placeholder.com/150" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="ACOME Smart Camera APC01 Indoor 3MP">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">ACOME Smart Camera APC01 Indoor 3MP</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 329.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+      <div class="card shadow-lg">
+        <img src="https://via.placeholder.com/150" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="ACOME Smart Camera APC32">
+        <div class="card-body p-2">
+          <h6 class="card-title text-center">ACOME Smart Camera APC32</h6>
+          <p class="card-text text-center text-dark fw-bold">Rp 525.000</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-sm btn-success">Beli</a>
+            <a href="#" class="btn btn-sm btn-info">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="img.product/PFM922I-6UN-C_thumb.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Kabel UTP/LAN Cat 6 Dahua DH-PFM9201-6UN">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">Kabel UTP/LAN Cat 6 Dahua DH-PFM9201-6UN</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 1.485.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="img.product/DS-1LN6UU _CCA_image_1.png" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Kabel UTP Cat 6 Hikvision DS-1LN6UU/CCA">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">Kabel UTP Cat 6 Hikvision DS-1LN6UU/CCA</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 865.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="img.product/Belden cat 6.jpg" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Kabel UTP/LAN Belden Cat 6">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">Kabel UTP/LAN Belden Cat 6</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 2.175.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="img.product/Commscope cat 6.jpg" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="KABEL LAN Commscope cat 6">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">KABEL LAN Commscope cat 6</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 1.900.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="https://via.placeholder.com/150" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Arduino Uno">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">Arduino Uno</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 87.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="https://via.placeholder.com/150" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Arduino Uno SMD">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">Arduino Uno SMD</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 68.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="https://via.placeholder.com/150" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Arduino Nano">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">Arduino Nano</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 55.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="https://via.placeholder.com/150" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="Sensor Ultrasonik HC-SR04">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">Sensor Ultrasonik HC-SR04</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 15.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="https://via.placeholder.com/150" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="DHT11 Humidity Sensor">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">DHT11 Humidity Sensor</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 15.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 col-lg-2 mb-3 product-card">
+        <div class="card shadow-lg">
+          <img src="https://via.placeholder.com/150" class="card-img-top img-fluid" style="height: 150px; object-fit: cover;" alt="DHT22 Humidity Sensor">
+          <div class="card-body p-2">
+            <h6 class="card-title text-center">DHT22 Humidity Sensor</h6>
+            <p class="card-text text-center text-dark fw-bold">Rp 55.000</p>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="btn btn-sm btn-success">Beli</a>
+              <a href="#" class="btn btn-sm btn-info">Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+</div>
+
+      
+      
+  
+      
+      <!-- Additional Products (sequentially added) -->
+ 
+  
+    <!-- Message when no products match the search -->
+    <div id="no-results-message" class="alert alert-warning" style="display: none;  padding: 10px 20px; margin-top: 40px; ;">
+      maaf barang yang di cari belum tersedia.
+  </div>
+  
+  </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
